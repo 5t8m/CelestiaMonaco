@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pro Monaco Editor</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monaco Editor with Tabs</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="tab-container">
-    <ul id="tabs"></ul>
-    <button id="add-tab">+</button>
+  <div id="tab-bar">
+    <div id="add-tab-btn">+</div>
   </div>
 
-  <div id="editor"></div>
+  <div id="context-menu" class="hidden">
+    <div id="rename-tab">Rename</div>
+    <div id="save-tab">Save</div>
+  </div>
 
-  <ul id="context-menu" class="hidden">
-    <li id="rename-tab">Rename</li>
-    <li id="save-tab">Save</li>
-  </ul>
+  <div id="editor-container" style="height: calc(100vh - 40px);"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.44.0/min/vs/loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs/loader.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
