@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monaco Editor - Professional Tabs</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs/loader.js"></script>
+</head>
+<body>
+  <div id="tab-bar">
+    <!-- Tabs will be dynamically added here -->
+    <button id="add-tab-btn" title="Add new script">+</button>
+  </div>
+  <div id="editor-container"></div>
+
+  <!-- Context Menu -->
+  <div id="context-menu" class="hidden">
+    <ul>
+      <li id="rename-tab">Rename</li>
+      <li id="save-tab">Save</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
